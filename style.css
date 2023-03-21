@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(230, 239, 246);
+    font-family: 'Karla', sans-serif;
+    display: grid;    
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 20px;
+    min-height: 100vh;
+}
+.container {
+    width: 70%;
+}
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    display: grid;
+    height: 2in;
+    background: white;
+    padding: 40px;
+    row-gap: 20px;
+}
+.header h1 {
+    color: #51a4aa;
+    font-size: 18px;
+}
+
+.header h2 {
+    color: #BFDF32;
+    font-size: 16px;
+    font-weight: 600px;
+}
+.header p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #bcbfc6;
+}
+.tab1{
+    display: grid;
+    background: #2bb3b1;
+    height: 2.4in;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.tab1 h1{
+    color: white;
+}
+.tab1 p{
+    color: white;
+}
+.tab2 {
+    background: #48bfbd;
+    padding: 30px;
+    height: 2.4in;
+    justify-content: center;
+}
+.tab2 h1, p  {
+    color: #f5f5f5;
+    
+    
+}
+.tab2 h1 {
+    text-align: start;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.tab2 p {
+    letter-spacing: 1px;
+    font-size: 11px;
+    color:#f5f5f5;
+    line-height: 16px;
+
+}
+.cta {
+    background: #bfdf32;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    height: 40px;
+}
+.rate {
+    color: white;
+    font-size: 30px;
+}
+.month {
+    color: #bcbfc6;
+    margin-left: 10px;
+    font-size: 14px;
+}
+footer p {
+    margin-top: 30px;
+}
+@media (max-width: 600px) {
+    .tabs{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .header {
+        height: fit-content;
+    }
+}
